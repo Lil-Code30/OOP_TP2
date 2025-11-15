@@ -68,7 +68,7 @@ namespace OOPTP2.classes
             float vitesseMoyen = totalVitesse / countPokemon;
             Console.WriteLine($"La vitesse moyen des pokemons.");
             Console.WriteLine("╔════════════╦══════════════════════╗");
-            Console.WriteLine($"║   Total #  ║ {vitesseMoyen:F2} Km/h {" ",11}║");
+            Console.WriteLine($"║   Moyen #  ║ {vitesseMoyen:F2} Km/h {" ",11}║");
             Console.WriteLine("╚════════════╩══════════════════════╝");
             Console.WriteLine();
         }
@@ -81,7 +81,7 @@ namespace OOPTP2.classes
 
         //une méthode qui affiche le nombre de Pokemons de chaque catégorie
         public static void AfficherPokemonParCat()
-        {
+        {     
             Console.WriteLine("To be implemented");
         }
 
