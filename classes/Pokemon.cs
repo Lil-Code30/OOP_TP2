@@ -2,21 +2,23 @@
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace OOPTP2.classes
 {
     abstract class  Pokemon
     {
         protected string nom;
-        protected int poids;
+        protected float poids;
         protected float vitesse;
         private static List<Pokemon> listPokemons = new List<Pokemon>();
         
 
-        public Pokemon(string nom, int poids)
+        public Pokemon(string nom, float poids)
         {
             this.nom = nom;
             this.poids = poids;
+            vitesse = 0;
         }
 
         abstract public float ClacVitesse();
@@ -25,11 +27,25 @@ namespace OOPTP2.classes
         //une méthode qui affiche tous les Pokemons créés
         public static void AfficherTousPokemon()
         {
-            Console.WriteLine("Liste des Pokemon");
-            foreach(Pokemon pokemon in listPokemons)
+            int count = 1;
+           
+            Console.WriteLine("\n╔══════════════════════════════════════════════════════╗");
+            Console.WriteLine("║                 Liste des Pokemons                   ║");
+            Console.WriteLine("╚══════════════════════════════════════════════════════╝");
+            foreach (Pokemon pokemon in listPokemons)
             {
-                Console.WriteLine(pokemon);
+                Console.Write(count + " - ");
+                Console.WriteLine(pokemon.ToString());
+                count++;
             }
+            Console.WriteLine("════════════════════════════════════════════════════════");
+            Console.WriteLine();
+        }
+
+        //Afficher le nombre total des Pokemons créés
+        public static void AfficherNbrPokemon()
+        {
+            Console.WriteLine($"Le nombre total des Pokemons créés est : {listPokemons.Count}");
         }
 
 
@@ -46,7 +62,7 @@ namespace OOPTP2.classes
             }
 
             float vitesseMoyen = totalVitesse / countPokemon;
-            Console.WriteLine($"La vitesse moyen des pokemons est :{vitesseMoyen} Km/h");
+            Console.WriteLine($"La vitesse moyen des pokemons est : {vitesseMoyen :F2} Km/h");
         }
 
         //une méthode qui ajoute un Pokemon
