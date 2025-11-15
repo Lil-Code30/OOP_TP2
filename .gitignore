@@ -46,3 +46,6 @@ TestResult*/
 
 # dotnet tools
 .dotnet/
+
+# drawio file
+.$
