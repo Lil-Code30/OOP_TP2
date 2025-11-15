@@ -10,6 +10,7 @@ Release/
 
 # Visual Studio Code
 .vscode/
+.vs/
 
 # User-specific files
 *.user
