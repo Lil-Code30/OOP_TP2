@@ -80,9 +80,14 @@ namespace OOPTP2.classes
 
 
         //une méthode qui affiche le nombre de Pokemons de chaque catégorie
-        public static void AfficherPokemonParCat()
-        {     
-            Console.WriteLine("To be implemented");
+        public static void AfficherNbrPokemonParCategorie()
+        {
+            foreach (Pokemon pokemon in listPokemons)
+            {
+                {
+                    Console.WriteLine("bientot...");
+                }
+            }
         }
 
 

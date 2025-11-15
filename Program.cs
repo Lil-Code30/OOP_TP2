@@ -24,6 +24,7 @@ class Program
 
         Pokemon.AfficherTousPokemon();
         Pokemon.AfficherNbrPokemon();
+        Pokemon.AfficherNbrPokemonParCategorie();
         Pokemon.VitesseMoyen();
     }
 }
