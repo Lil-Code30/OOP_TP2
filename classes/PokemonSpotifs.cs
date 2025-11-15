@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace OOPTP2.classes
+﻿namespace OOPTP2.classes
 {
     class PokemonSpotifs : Pokemon
     {

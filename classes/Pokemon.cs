@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-
-namespace OOPTP2.classes
+﻿namespace OOPTP2.classes
 {
     abstract class  Pokemon
     {
