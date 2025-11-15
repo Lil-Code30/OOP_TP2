@@ -10,6 +10,8 @@ class Program
         PokemonSpotifs pika = new PokemonSpotifs("Pikachu", 18, 2, 0.85f, 120);
         Pokemon.AjoutePokemon(pika);
 
+
+
         pika.Afficher();
 
         Pokemon.AfficherTousPokemon();

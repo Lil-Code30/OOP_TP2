@@ -45,7 +45,11 @@ namespace OOPTP2.classes
         //Afficher le nombre total des Pokemons créés
         public static void AfficherNbrPokemon()
         {
-            Console.WriteLine($"Le nombre total des Pokemons créés est : {listPokemons.Count}");
+            Console.WriteLine($"Le nombre total des Pokemons créés");
+            Console.WriteLine("╔════════════╦══════════════════════╗");
+            Console.WriteLine($"║   Total #  ║ {listPokemons.Count,2} Pokemon(s) {" ",7}║");
+            Console.WriteLine("╚════════════╩══════════════════════╝");
+            Console.WriteLine();
         }
 
 
@@ -62,7 +66,11 @@ namespace OOPTP2.classes
             }
 
             float vitesseMoyen = totalVitesse / countPokemon;
-            Console.WriteLine($"La vitesse moyen des pokemons est : {vitesseMoyen :F2} Km/h");
+            Console.WriteLine($"La vitesse moyen des pokemons.");
+            Console.WriteLine("╔════════════╦══════════════════════╗");
+            Console.WriteLine($"║   Total #  ║ {vitesseMoyen:F2} Km/h {" ",11}║");
+            Console.WriteLine("╚════════════╩══════════════════════╝");
+            Console.WriteLine();
         }
 
         //une méthode qui ajoute un Pokemon
