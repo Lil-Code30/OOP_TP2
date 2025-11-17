@@ -27,4 +27,6 @@
 			+float ClacVitesse() <<override>>
 			+void Afficher() <<override>>
 		}
+
+		Pokemon <|-- PokemonCasaniers
 ```
