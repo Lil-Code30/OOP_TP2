@@ -54,8 +54,7 @@
             int countPokemon = listPokemons.Count;
             foreach (Pokemon pokemon in listPokemons)
             {
-
-                totalVitesse = totalVitesse + pokemon.vitesse;
+                totalVitesse = totalVitesse + pokemon.CalcVitesse();
 
             }
 
