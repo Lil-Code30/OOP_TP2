@@ -15,7 +15,7 @@
 			+void AfficherTousPokemon() %% static
 			+void AfficherNbrPokemon() %% static
 			+void VitesseMoyen() %% static
-			+void AjoutePokemon(pokemon: Pokemon %% static
+			+void AjoutePokemon(pokemon: Pokemon) %% static
 			+void AfficherNbrPokemonParCategorie() %% static
 		}
 		
