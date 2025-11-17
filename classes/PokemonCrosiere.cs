@@ -10,7 +10,7 @@
             this.nbrNageoires = nbrNageoires;
         }
 
-        public override float ClacVitesse()
+        public override float CalcVitesse()
         {
             //formule : ((poids / 25) * nombre de nageoires) / 2
             vitesse = ((poids / 25) * nbrNageoires) / 2;
@@ -20,7 +20,7 @@
 
         public override void Afficher()
         {
-            Console.WriteLine($"Je suis le pokémon {nom} mon poids est de {poids} kg, ma vitesse est de {ClacVitesse():F2} km/h j'ai {nbrNageoires} nageoires.");
+            Console.WriteLine($"Je suis le pokémon {nom} mon poids est de {poids} kg, ma vitesse est de {CalcVitesse():F2} km/h j'ai {nbrNageoires} nageoires.");
         }
     }
 }

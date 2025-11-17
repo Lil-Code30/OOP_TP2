@@ -13,7 +13,7 @@
             this.heuresDeVisionnage = heuresDeVisionnage;
         }
 
-        public override float ClacVitesse()
+        public override float CalcVitesse()
         {
             //formule : vitesse = nombre de pattes *taille * 3
             vitesse = nbrPattes * taille * 3;
@@ -23,7 +23,7 @@
 
         public override void Afficher()
         {
-            Console.WriteLine($"Je suis le pokémon {nom} mon poids est de {poids} kg, ma vitesse est de {ClacVitesse():F2} km/h j'ai {nbrPattes} pattes, ma taille est de {taille}m  je regarde la télé {heuresDeVisionnage}h par jour");
+            Console.WriteLine($"Je suis le pokémon {nom} mon poids est de {poids} kg, ma vitesse est de {CalcVitesse():F2} km/h j'ai {nbrPattes} pattes, ma taille est de {taille}m  je regarde la télé {heuresDeVisionnage}h par jour");
         }
     }
 }

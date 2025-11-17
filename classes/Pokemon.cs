@@ -15,7 +15,7 @@
             vitesse = 0;
         }
 
-        abstract public float ClacVitesse();
+        abstract public float CalcVitesse();
         abstract public void Afficher();
 
         //une méthode qui affiche tous les Pokemons créés
