@@ -76,12 +76,35 @@
         //une méthode qui affiche le nombre de Pokemons de chaque catégorie
         public static void AfficherNbrPokemonParCategorie()
         {
+          
+            Dictionary<string, int> categoriePokemon = new Dictionary<string, int>
+            {
+                {"PokemonSpotifs" , 0},
+                {"PokemonCasaniers" , 0},
+                {"PokemonDeMers" , 0},
+                {"PokemonCrosiere" , 0}
+            };
+
             foreach (Pokemon pokemon in listPokemons)
             {
-                {
-                    Console.WriteLine("bientot...");
+                
+                var pokemonType = Convert.ToString(pokemon.GetType());
+                string nomCategorie = pokemonType.Split(".").Last();
+
+                if (categoriePokemon.ContainsKey(nomCategorie)){
+                    categoriePokemon[nomCategorie]++;
                 }
             }
+
+            Console.WriteLine("\n╔══════════════════════════════════════════════════════╗");
+            Console.WriteLine("║         Nombre de Pokemon par catégorie              ║");
+            Console.WriteLine("╠══════════════════════════════════════════════════════╣");
+            foreach (var categorie in categoriePokemon)
+            {
+                Console.WriteLine($"║ {categorie.Key,-30} : {categorie.Value,8} Pokemon(s) ║");
+            }
+            Console.WriteLine("╚══════════════════════════════════════════════════════╝");
+            Console.WriteLine();
         }
 
 
