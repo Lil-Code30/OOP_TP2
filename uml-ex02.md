@@ -6,7 +6,6 @@
 			<<abstract>>
 			#string nom
 			#float poids
-			#float vitesse
 			
 
 			*+float CalcVitesse()*
