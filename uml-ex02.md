@@ -13,7 +13,7 @@
 			*+void Afficher()*
 		}
 
-		class Pkemons{
+		class Pokemons{
 			-static List~Pokemon~ listPokemon
 
 			+void AfficherTousPokemon() %% static
