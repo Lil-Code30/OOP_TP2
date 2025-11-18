@@ -7,10 +7,14 @@
 			#string nom
 			#float poids
 			#float vitesse
-			-static List~Pokemon~ listPokemon
+			
 
 			*+float CalcVitesse()*
 			*+void Afficher()*
+		}
+
+		class Pkemons{
+			-static List~Pokemon~ listPokemon
 
 			+void AfficherTousPokemon() %% static
 			+void AfficherNbrPokemon() %% static

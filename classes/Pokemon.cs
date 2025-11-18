@@ -15,7 +15,7 @@
 
         public string Nom
         {
-                       get { return nom; }
+              get { return nom; }
         }
 
         public float Poids
