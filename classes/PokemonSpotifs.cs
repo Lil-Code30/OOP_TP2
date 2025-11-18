@@ -16,9 +16,7 @@
         public override float CalcVitesse()
         {
             //formule : vitesse = nombre de pattes *taille * 3
-            vitesse = nbrPattes * taille * 3;
-            return vitesse;
-            
+            return  nbrPattes * taille * 3;
         }
 
         public override void Afficher()
