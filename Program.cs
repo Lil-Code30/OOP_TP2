@@ -5,8 +5,6 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("...");
-
         // PokemonSpotifs - 2 instances
         PokemonSpotifs pika = new PokemonSpotifs("Pikachu", 18, 2, 0.85f, 120);
         Pokemons.AjoutePokemon(pika);
@@ -37,6 +35,9 @@ class Program
 
 
         pika.Afficher();
+        sala.Afficher();
+        rondou.Afficher();
+        bul.Afficher();
 
         Pokemons.AfficherTousPokemon();
         Pokemons.AfficherNbrPokemon();
