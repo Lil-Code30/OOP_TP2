@@ -1,7 +1,7 @@
 # Diagramme UML Question 1
 
 ```mermaid
-	ClassDiagram
+	classDiagram
 		class A{
 			<<abstract>>
 			#a1
@@ -27,4 +27,6 @@
 			+Multiplication(int y){y=y*a2; return y;}
 		}
 
+		A <| -- B
+		A <| -- C
 ```
