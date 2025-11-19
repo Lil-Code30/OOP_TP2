@@ -8,7 +8,7 @@
 			#a2
 			#a3
 
-			*+Somme();*
+			*+Somme()*;
 			+Multiplication(int y){y=y*a1*a2*a3; return y}
 			+Moyenne(int z){return Somme()/z;}
 		}

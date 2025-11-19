@@ -8,8 +8,8 @@
 			#float poids
 			
 
-			*+float CalcVitesse()*
-			*+void Afficher()*
+			*+float CalcVitesse()*;
+			*+void Afficher()*;
 		}
 
 		class Pokemons{
