@@ -27,6 +27,6 @@
 			+Multiplication(int y){y=y*a2; return y;}
 		}
 
-		A <| -- B
-		A <| -- C
+		A <|-- B
+		A <|-- C
 ```
