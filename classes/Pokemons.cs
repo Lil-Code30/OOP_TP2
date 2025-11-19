@@ -13,9 +13,12 @@ namespace OOPTP2.classes
             Console.WriteLine("\n╔══════════════════════════════════════════════════════╗");
             Console.WriteLine("║                 Liste des Pokemons                   ║");
             Console.WriteLine("╚══════════════════════════════════════════════════════╝");
+            Console.WriteLine();
             foreach (Pokemon pokemon in listPokemons)
             {
-                Console.WriteLine($"{count} - Pokemon '{pokemon.Nom}' de type {pokemon.GetType()}");
+                Console.Write($"{count} - ");
+                pokemon.Afficher();
+                Console.WriteLine();
 
                 count++;
             }

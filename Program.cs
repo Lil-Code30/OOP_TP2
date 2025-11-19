@@ -34,11 +34,6 @@ class Program
         Pokemons.AjoutePokemon(leviator);
 
 
-        pika.Afficher();
-        sala.Afficher();
-        rondou.Afficher();
-        bul.Afficher();
-
         Pokemons.AfficherTousPokemon();
         Pokemons.AfficherNbrPokemon();
         Pokemons.AfficherNbrPokemonParCategorie();
