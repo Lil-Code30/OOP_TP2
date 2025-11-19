@@ -13,8 +13,7 @@
         public override float CalcVitesse()
         {
             //formule : ((poids / 25) * nombre de nageoires) / 2
-            vitesse = ((poids / 25) * nbrNageoires) / 2;
-            return vitesse;
+            return  ((poids / 25) * nbrNageoires) / 2;
 
         }
 
