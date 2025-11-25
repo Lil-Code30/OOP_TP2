@@ -6,7 +6,7 @@ namespace OOPTP2.classes
         private static List<Pokemon> listPokemons = new List<Pokemon>();
 
         //une méthode qui affiche tous les Pokemons créés
-        public static void AfficherTousPokemon()
+        public  void AfficherTousPokemon()
         {
             int count = 1;
 
@@ -27,7 +27,7 @@ namespace OOPTP2.classes
         }
 
         //Afficher le nombre total des Pokemons créés
-        public static void AfficherNbrPokemon()
+        public void AfficherNbrPokemon()
         {
             Console.WriteLine($"Le nombre total des Pokemons créés");
             Console.WriteLine("╔════════════╦══════════════════════╗");
@@ -38,7 +38,7 @@ namespace OOPTP2.classes
 
 
         //une méthode qui calcule la vitesse moyenne des Pokemons créés.
-        public static void VitesseMoyen()
+        public void VitesseMoyen()
         {
             float totalVitesse = 0;
             int countPokemon = listPokemons.Count;
@@ -58,14 +58,14 @@ namespace OOPTP2.classes
         }
 
         //une méthode qui ajoute un Pokemon
-        public static void AjoutePokemon(Pokemon pokemon)
+        public void AjoutePokemon(Pokemon pokemon)
         {
             listPokemons.Add(pokemon);
         }
 
 
         //une méthode qui affiche le nombre de Pokemons de chaque catégorie
-        public static void AfficherNbrPokemonParCategorie()
+        public void AfficherNbrPokemonParCategorie()
         {
 
             Dictionary<string, int> categoriePokemon = new Dictionary<string, int>
