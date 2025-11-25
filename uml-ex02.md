@@ -15,17 +15,18 @@
 		class Pokemons{
 			-static List~Pokemon~ listPokemon
 
-			+void AfficherTousPokemon() %% static
-			+void AfficherNbrPokemon() %% static
-			+void VitesseMoyen() %% static
-			+void AjoutePokemon(pokemon: Pokemon) %% static
-			+void AfficherNbrPokemonParCategorie() %% static
+			+void AfficherTousPokemon() 
+			+void AfficherNbrPokemon() 
+			+void VitesseMoyen() 
+			+void AjoutePokemon(pokemon: Pokemon) 
+			+void AfficherNbrPokemonParCategorie() 
 		}
 		
 		class PokemonCasaniers{
 			-int nbrPattes
 			-float taille
 			-int heuresDeVisionage
+			+int nbrPokemonCasaniers = 0
 
 			+float CalcVitesse() <<override>>
 			+void Afficher() <<override>>
@@ -33,6 +34,7 @@
 
 		class PokemonCrosiere{
 			-int nbrNageoires
+			+int nbrPokemonCrosiere = 0
 
 			+float CalcVitesse() <<override>>
 			+void Afficher() <<override>>
@@ -40,6 +42,7 @@
 
 		class PokemonDeMers{
 			-int nbrNageoires
+			+int nbrPokemonDeMers = 0
 
 			+float CalcVitesse() <<override>>
 			+void Afficher() <<override>>
@@ -49,6 +52,7 @@
 			-int nbrPattes
 			-float taille
 			-int frequenceCardiaque
+			+int nbrPokemonSpotifs = 0 
 
 			+float CalcVitesse() <<override>>
 			+void Afficher() <<override>>
