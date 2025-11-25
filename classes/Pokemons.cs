@@ -42,6 +42,12 @@ namespace OOPTP2.classes
         {
             float totalVitesse = 0;
             int countPokemon = listPokemons.Count;
+
+            if (countPokemon == 0)
+            {
+                Console.WriteLine("Aucune moyenne");
+                return;
+            }
             foreach (Pokemon pokemon in listPokemons)
             {
 
@@ -68,33 +74,13 @@ namespace OOPTP2.classes
         public void AfficherNbrPokemonParCategorie()
         {
 
-            Dictionary<string, int> categoriePokemon = new Dictionary<string, int>
-            {
-                {"PokemonSpotifs" , 0},
-                {"PokemonCasaniers" , 0},
-                {"PokemonDeMers" , 0},
-                {"PokemonCrosiere" , 0}
-            };
-
-            foreach (Pokemon pokemon in listPokemons)
-            {
-
-                var pokemonType = Convert.ToString(pokemon.GetType());
-                string nomCategorie = pokemonType.Split(".").Last();
-
-                if (categoriePokemon.ContainsKey(nomCategorie))
-                {
-                    categoriePokemon[nomCategorie]++;
-                }
-            }
-
             Console.WriteLine("\n╔══════════════════════════════════════════════════════╗");
             Console.WriteLine("║         Nombre de Pokemon par catégorie              ║");
             Console.WriteLine("╠══════════════════════════════════════════════════════╣");
-            foreach (var categorie in categoriePokemon)
-            {
-                Console.WriteLine($"║ {categorie.Key,-30} : {categorie.Value,8} Pokemon(s) ║");
-            }
+            Console.WriteLine($"Nombre total de Pokémon Sportifs créés : {PokemonSpotifs.nbrPokemonSpotifs}");
+            Console.WriteLine($"Nombre total de Pokémon Casanier créés : {PokemonCasaniers.nbrPokemonCasaniers}");
+            Console.WriteLine($"Nombre total de Pokémon Mers créés : {PokemonDeMers.nbrPokemonDeMers}");
+            Console.WriteLine($"Nombre total de Pokémon Croisiere créés : {PokemonCrosiere.nbrPokemonCrosiere}");
             Console.WriteLine("╚══════════════════════════════════════════════════════╝");
             Console.WriteLine();
         }

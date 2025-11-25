@@ -4,11 +4,13 @@
     {
         
         private int nbrNageoires;
+        public static int nbrPokemonDeMers = 0;
 
         public PokemonDeMers(string nom, float poids, int nbrNageoires ) : base(nom, poids)
         {
            
             this.nbrNageoires = nbrNageoires;
+            nbrPokemonDeMers++;
         }
 
         public override float CalcVitesse()

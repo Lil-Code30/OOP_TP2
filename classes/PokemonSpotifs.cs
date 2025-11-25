@@ -5,12 +5,14 @@
         private int nbrPattes;
         private float taille;
         private int frequenceCardiaque;
+        public static int nbrPokemonSpotifs = 0;
 
         public PokemonSpotifs(string nom, float poids,int nbrPattes, float taille, int frequenceCardiaque) : base(nom, poids)
         {
             this.taille = taille;
             this.nbrPattes = nbrPattes;
             this.frequenceCardiaque = frequenceCardiaque;
+            nbrPokemonSpotifs++;
         }
 
         public override float CalcVitesse()

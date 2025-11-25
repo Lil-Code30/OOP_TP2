@@ -3,11 +3,13 @@
     class PokemonCrosiere : Pokemon
     {
         private int nbrNageoires;
+        public static int nbrPokemonCrosiere = 0;
 
         public PokemonCrosiere(string nom, float poids, int nbrNageoires) : base(nom, poids)
         {
 
             this.nbrNageoires = nbrNageoires;
+            nbrPokemonCrosiere++;
         }
 
         public override float CalcVitesse()

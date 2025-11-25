@@ -5,41 +5,29 @@ class Program
 {
     static void Main()
     {
-        
-        Pokemons listPokemonsA = new Pokemons();
+
+        Pokemons Pokemons = new Pokemons();
 
         // PokemonSpotifs - 2 instances
-        PokemonSpotifs pika = new PokemonSpotifs("Pikachu", 18, 2, 0.85f, 120);
-        listPokemonsA.AjoutePokemon(pika);
-
-        PokemonSpotifs evoli = new PokemonSpotifs("Evoli", 6.5f, 4, 0.30f, 110);
-        listPokemonsA.AjoutePokemon(evoli);
+        Pokemons.AjoutePokemon(new PokemonSpotifs("Pikachu", 18, 2, 0.85f, 120));
+        Pokemons.AjoutePokemon(new PokemonSpotifs("Evoli", 6.5f, 4, 0.30f, 110));
 
         // PokemonCasaniers - 2 instances
-        PokemonCasaniers sala = new PokemonCasaniers("Salameche", 12, 2, 0.65f, 8);
-        listPokemonsA.AjoutePokemon(sala);
-
-        PokemonCasaniers ronflex = new PokemonCasaniers("Ronflex", 460, 2, 2.10f, 16);
-        listPokemonsA.AjoutePokemon(ronflex);
+        Pokemons.AjoutePokemon(new PokemonCasaniers("Salameche", 12, 2, 0.65f, 8));
+        Pokemons.AjoutePokemon(new PokemonCasaniers("Ronflex", 460, 2, 2.10f, 16));
 
         // PokemonDeMers - 2 instances
-        PokemonDeMers rondou = new PokemonDeMers("Rondoudou", 45, 2);
-        listPokemonsA.AjoutePokemon(rondou);
-
-        PokemonDeMers carapuce = new PokemonDeMers("Carapuce", 9, 2);
-        listPokemonsA.AjoutePokemon(carapuce);
+        Pokemons.AjoutePokemon(new PokemonDeMers("Rondoudou", 45, 2));
+        Pokemons.AjoutePokemon(new PokemonDeMers("Carapuce", 9, 2));
 
         // PokemonCrosiere - 2 instances
-        PokemonCrosiere bul = new PokemonCrosiere("Bulbizarre", 15, 3);
-        listPokemonsA.AjoutePokemon(bul);
-
-        PokemonCrosiere leviator = new PokemonCrosiere("Leviator", 235, 4);
-        listPokemonsA.AjoutePokemon(leviator);
+        Pokemons.AjoutePokemon(new PokemonCrosiere("Bulbizarre", 15, 3));
+        Pokemons.AjoutePokemon(new PokemonCrosiere("Leviator", 235, 4));
 
 
-        listPokemonsA.AfficherTousPokemon();
-        listPokemonsA.AfficherNbrPokemon();
-        listPokemonsA.AfficherNbrPokemonParCategorie();
-        listPokemonsA.VitesseMoyen();
+        Pokemons.AfficherTousPokemon();
+        Pokemons.AfficherNbrPokemon();
+        Pokemons.AfficherNbrPokemonParCategorie();
+        Pokemons.VitesseMoyen();
     }
 }
