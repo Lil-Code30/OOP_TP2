@@ -2,8 +2,7 @@
 
 ```mermaid
 	classDiagram
-		class Pokemon{
-			<<abstract>>
+		class *Pokemon*{		
 			#string nom
 			#float poids
 			
